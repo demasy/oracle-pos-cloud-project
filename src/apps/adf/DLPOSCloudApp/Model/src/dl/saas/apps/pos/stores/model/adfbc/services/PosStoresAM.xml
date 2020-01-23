@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PosStoresAM"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ViewUsage
+    Name="PosStoreVO1"
+    ViewObjectName="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreVO"/>
+  <ViewUsage
+    Name="PosStoreBranchVO1"
+    ViewObjectName="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchVO"/>
+  <ViewLinkUsage
+    Name="PsbStoreIdFkVL1"
+    ViewLinkObjectName="dl.saas.apps.pos.stores.model.adfbc.views.links.PsbStoreIdFkVL"
+    SrcViewUsageName="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM.PosStoreVO1"
+    DstViewUsageName="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM.PosStoreBranchVO1"
+    Reversed="false"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="dl.saas.apps.pos.model.ModelBundle"/>
+  </ResourceBundle>
+</AppModule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM">
+    <AppModuleConfig name="PosStoresAMLocal" jbo.project="dl.saas.apps.pos.model.Model"
+                     ApplicationName="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM" DeployPlatform="LOCAL">
+      <Database JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="PosStoresAMShared" jbo.project="dl.saas.apps.pos.model.Model"
+                     ApplicationName="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

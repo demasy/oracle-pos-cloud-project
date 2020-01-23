@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PsbBranchIdFkLovVL"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <ViewLinkDefEnd
+    Name="PosStoreBranchsLOVVO"
+    Cardinality="1"
+    Source="true"
+    Owner="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchsLOVVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="PosStoreBranchsLOVVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchsLOVVO.BranchId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="BranchParentIdPosStoreBranchsLOVVO"
+    Cardinality="-1"
+    Owner="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchsLOVVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="BranchParentIdPosStoreBranchsLOVVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchsLOVVO.BranchParentId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

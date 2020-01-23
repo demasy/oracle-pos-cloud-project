@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PsbStoreIdFkAssoc"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="PosStore"
+    Cardinality="1"
+    Source="true"
+    Owner="dl.saas.apps.pos.stores.model.adfbc.entities.PosStoreEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="PosStore"/>
+      <Attr Name="_foreignKey" Value="dl.saas.apps.pos.stores.model.adfbc.entities.PosStoreEO.PsStoreIdPk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.saas.apps.pos.stores.model.adfbc.entities.PosStoreEO.StoreId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="PosStoreBranch"
+    Cardinality="-1"
+    Owner="dl.saas.apps.pos.stores.model.adfbc.entities.PosStoreBranchEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="PosStoreBranch"/>
+      <Attr Name="_foreignKey" Value="dl.saas.apps.pos.stores.model.adfbc.entities.PosStoreBranchEO.PsbStoreIdFk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.saas.apps.pos.stores.model.adfbc.entities.PosStoreBranchEO.StoreId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

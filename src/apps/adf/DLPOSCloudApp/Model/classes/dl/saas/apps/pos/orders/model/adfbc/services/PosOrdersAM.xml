@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PosOrdersAM"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="dl.saas.apps.pos.orders.model.adfbc.services.PosOrdersAM_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ViewUsage
+    Name="PosOrder1"
+    ViewObjectName="dl.saas.apps.pos.orders.model.adfbc.views.PosOrderVO"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="dl.saas.apps.pos.model.ModelBundle"/>
+  </ResourceBundle>
+</AppModule>

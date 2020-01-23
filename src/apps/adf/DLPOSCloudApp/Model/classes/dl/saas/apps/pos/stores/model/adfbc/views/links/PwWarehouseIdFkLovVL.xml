@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PwWarehouseIdFkLovVL"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <ViewLinkDefEnd
+    Name="PosWarehousesLOVVO"
+    Cardinality="1"
+    Source="true"
+    Owner="dl.saas.apps.pos.stores.model.adfbc.views.PosWarehousesLOVVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="PosWarehousesLOVVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.saas.apps.pos.stores.model.adfbc.views.PosWarehousesLOVVO.WarehouseId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="WarehouseParentIdPosWarehousesLOVVO"
+    Cardinality="-1"
+    Owner="dl.saas.apps.pos.stores.model.adfbc.views.PosWarehousesLOVVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="WarehouseParentIdPosWarehousesLOVVO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.saas.apps.pos.stores.model.adfbc.views.PosWarehousesLOVVO.WarehouseParentId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

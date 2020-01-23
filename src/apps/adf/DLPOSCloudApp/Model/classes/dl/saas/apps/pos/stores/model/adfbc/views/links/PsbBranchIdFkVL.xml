@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PsbBranchIdFkVL"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  EntityAssociation="dl.saas.apps.pos.stores.model.adfbc.entities.associations.PsbBranchIdFkAssoc">
+  <ViewLinkDefEnd
+    Name="BranchParentIdPosStoreBranch"
+    Cardinality="1"
+    Source="true"
+    Owner="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="BranchParentIdPosStoreBranch"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchVO.BranchId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="PosStoreBranch"
+    Cardinality="-1"
+    Owner="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="PosStoreBranch"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.saas.apps.pos.stores.model.adfbc.views.PosStoreBranchVO.BranchParentId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+</ViewLink>

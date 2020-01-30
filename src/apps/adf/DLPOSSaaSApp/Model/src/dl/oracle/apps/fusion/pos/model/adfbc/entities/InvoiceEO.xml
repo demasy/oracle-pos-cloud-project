@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="InvoiceEO"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="POS_INVOICES"
+  AliasName="InvoiceEO"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="InvoiceId"
+    IsNotNull="true"
+    ColumnName="INVOICE_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="POS_INVOICES"
+    PrimaryKey="true"/>
+  <Attribute
+    Name="OrderId"
+    IsNotNull="true"
+    ColumnName="ORDER_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="PromotionId"
+    ColumnName="PROMOTION_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="InvoiceNumber"
+    IsUnique="true"
+    IsNotNull="true"
+    Precision="30"
+    ColumnName="INVOICE_NUMBER"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="POS_INVOICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Description"
+    Precision="4000"
+    ColumnName="DESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="POS_INVOICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="4000"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Amount"
+    IsNotNull="true"
+    ColumnName="AMOUNT"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="CurrancyCode"
+    IsNotNull="true"
+    Precision="3"
+    ColumnName="CURRANCY_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="POS_INVOICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="3"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EnabledFlag"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="ENABLED_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="POS_INVOICES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="StartDate"
+    IsNotNull="true"
+    ColumnName="START_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="EndDate"
+    ColumnName="END_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="CreatedBy"
+    IsNotNull="true"
+    ColumnName="CREATED_BY"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="CreationDate"
+    IsNotNull="true"
+    ColumnName="CREATION_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="LastUpdatedBy"
+    IsNotNull="true"
+    ColumnName="LAST_UPDATED_BY"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="LastUpdateDate"
+    IsNotNull="true"
+    ColumnName="LAST_UPDATE_DATE"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="POS_INVOICES"/>
+  <Attribute
+    Name="ObjectVersionId"
+    IsNotNull="true"
+    ColumnName="OBJECT_VERSION_ID"
+    SQLType="NUMERIC"
+    Type="java.math.BigDecimal"
+    ColumnType="NUMBER"
+    TableName="POS_INVOICES"/>
+  <AccessorAttribute
+    Name="Order"
+    Association="dl.oracle.apps.fusion.pos.model.adfbc.entities.associations.PiOrderIdFkAssoc"
+    AssociationEnd="dl.oracle.apps.fusion.pos.model.adfbc.entities.associations.PiOrderIdFkAssoc.Order"
+    AssociationOtherEnd="dl.oracle.apps.fusion.pos.model.adfbc.entities.associations.PiOrderIdFkAssoc.Invoice"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <AccessorAttribute
+    Name="Payment"
+    Association="dl.oracle.apps.fusion.pos.model.adfbc.entities.associations.PpInvoiceIdFkAssoc"
+    AssociationEnd="dl.oracle.apps.fusion.pos.model.adfbc.entities.associations.PpInvoiceIdFkAssoc.Payment"
+    AssociationOtherEnd="dl.oracle.apps.fusion.pos.model.adfbc.entities.associations.PpInvoiceIdFkAssoc.Invoice"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="PiInvoiceIdPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="PI_INVOICE_ID_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.oracle.apps.fusion.pos.model.adfbc.entities.InvoiceEO.InvoiceId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PiInvoiceNumberUn">
+    <DesignTime>
+      <Attr Name="_isUnique" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PI_INVOICE_NUMBER_UN"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.oracle.apps.fusion.pos.model.adfbc.entities.InvoiceEO.InvoiceNumber"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="PiOrderIdFk">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="PO_ORDER_ID_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="PI_ORDER_ID_FK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.oracle.apps.fusion.pos.model.adfbc.entities.InvoiceEO.OrderId"/>
+    </AttrArray>
+  </Key>
+</Entity>

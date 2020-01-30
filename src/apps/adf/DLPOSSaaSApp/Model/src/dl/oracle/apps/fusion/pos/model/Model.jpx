@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Model"
+  Version="12.2.1.9.14"
+  SeparateXMLFiles="true"
+  PackageName="dl.oracle.apps.fusion.pos.model">
+  <DesignTime>
+    <Attr Name="_DTExpressionTypeChecking" Value="true"/>
+    <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
+    <Attr Name="_jprName" Value="../../../../../../../Model.jpr"/>
+    <Attr Name="_NamedConnection" Value="DL"/>
+    <Attr Name="_appModuleNames0" Value="dl.oracle.apps.fusion.pos.model.adfbc.services.PosRootAM"/>
+    <Attr Name="_appModuleNames1" Value="dl.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"/>
+  </DesignTime>
+  <Containee
+    Name="associations"
+    PackageName="dl.oracle.apps.fusion.pos.model.adfbc.entities.associations"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AS" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="entities"
+    PackageName="dl.oracle.apps.fusion.pos.model.adfbc.entities"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="services"
+    PackageName="dl.oracle.apps.fusion.pos.model.adfbc.services"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="links"
+    PackageName="dl.oracle.apps.fusion.pos.model.adfbc.views.links"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VL" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="views"
+    PackageName="dl.oracle.apps.fusion.pos.model.adfbc.views"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+</JboProject>

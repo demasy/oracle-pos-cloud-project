@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle-webservice-clients xmlns:ns0="http://java.sun.com/xml/ns/javaee">
+   <webservice-client>
+      <service-qname namespaceURI="http://xmlns.oracle.com/oxp/service/v2" localpart="ReportService"/>
+      <port-info>
+         <wsdl-port namespaceURI="http://xmlns.oracle.com/oxp/service/v2" localpart="ReportService"/>
+         <runtime/>
+         <operations>
+            <operation name="getTemplate"/>
+            <operation name="createReport"/>
+            <operation name="getReportDefinitionInSession"/>
+            <operation name="updateReportDefinitionInSession"/>
+            <operation name="removeObjectFromCacheInSession"/>
+            <operation name="updateTemplateForReportInSession"/>
+            <operation name="getReportParameters"/>
+            <operation name="runReport"/>
+            <operation name="getTemplateAvailableLocales"/>
+            <operation name="runReportInSession"/>
+            <operation name="runDataModel"/>
+            <operation name="runDataModelInSession"/>
+            <operation name="getReportDefinition"/>
+            <operation name="getMobileAppDefinition"/>
+            <operation name="getMobileAppDefinitionInSession"/>
+            <operation name="getReportSampleData"/>
+            <operation name="getReportSampleDataInSession"/>
+            <operation name="getXDOSchema"/>
+            <operation name="getXDOSchemaInSession"/>
+            <operation name="getTemplateAvailableLocalesInSession"/>
+            <operation name="getTemplateAvailableXLIFFs"/>
+            <operation name="getTemplateAvailableXLIFFsInSession"/>
+            <operation name="getTemplateInSession"/>
+            <operation name="getReportParametersInSession"/>
+            <operation name="getTemplateParameters"/>
+            <operation name="getTemplateParametersInSession"/>
+            <operation name="getListOfSubjectArea"/>
+            <operation name="getListOfSubjectAreaInSession"/>
+            <operation name="createReportInSession"/>
+            <operation name="updateReportDefinition"/>
+            <operation name="removeObjectFromCache"/>
+            <operation name="updateMobileAppDefinition"/>
+            <operation name="updateMobileAppDefinitionInSession"/>
+            <operation name="uploadTemplateForReport"/>
+            <operation name="uploadTemplateForReportInSession"/>
+            <operation name="updateTemplateForReport"/>
+            <operation name="removeTemplateForReport"/>
+            <operation name="removeTemplateForReportInSession"/>
+            <operation name="uploadXLIFFForReport"/>
+            <operation name="updateXLIFFForReportInSession"/>
+            <operation name="updateXLIFFForReport"/>
+            <operation name="uploadXLIFFForReportInSession"/>
+            <operation name="uploadReportDataChunk"/>
+            <operation name="uploadReportDataChunkInSession"/>
+            <operation name="downloadReportDataChunk"/>
+            <operation name="downloadReportDataChunkInSession"/>
+         </operations>
+      </port-info>
+   </webservice-client>
+</oracle-webservice-clients>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.PosRootAM">
+    <AppModuleConfig name="PosRootAMLocal" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.PosRootAM" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.PosRootAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="PosRootAMShared" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.PosRootAM" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.PosRootAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.StoresAM">
+    <AppModuleConfig name="StoresAMLocal" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.StoresAM" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="StoresAMShared" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.StoresAM" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

@@ -14,7 +14,25 @@
     <Attr Name="_appModuleNames0" Value="dl.saas.apps.pos.stores.model.adfbc.services.PosStoresAM"/>
     <Attr Name="_appModuleNames1" Value="dl.saas.apps.pos.model.adfbc.services.PosMainAM"/>
     <Attr Name="_appModuleNames2" Value="dl.saas.apps.pos.orders.model.adfbc.services.PosOrdersAM"/>
+    <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
+    <Attr Name="_appModuleNames3" Value="dl.saas.apps.pos.model.adfbc.services.IntegrationAM"/>
   </DesignTime>
+  <Containee
+    Name="associations"
+    PackageName="dl.saas.apps.pos.integ.model.adfbc.entities.associations"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AS" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="entities"
+    PackageName="dl.saas.apps.pos.integ.model.adfbc.entities"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
   <Containee
     Name="services"
     PackageName="dl.saas.apps.pos.model.adfbc.services"
@@ -24,11 +42,43 @@
     </DesignTime>
   </Containee>
   <Containee
+    Name="links"
+    PackageName="dl.saas.apps.pos.model.adfbc.views.links"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VL" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="views"
+    PackageName="dl.saas.apps.pos.model.adfbc.views"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="entities"
+    PackageName="dl.saas.apps.pos.orders.model.adfbc.entities"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
     Name="services"
     PackageName="dl.saas.apps.pos.orders.model.adfbc.services"
     ObjectType="JboPackage">
     <DesignTime>
       <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="entities"
+    PackageName="dl.saas.apps.pos.parties.model.adfbc.entities"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
     </DesignTime>
   </Containee>
   <Containee

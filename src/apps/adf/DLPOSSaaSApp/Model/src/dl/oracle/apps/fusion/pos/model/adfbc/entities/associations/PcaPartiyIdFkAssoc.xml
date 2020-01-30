@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PcaPartiyIdFkAssoc"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="Partie"
+    Cardinality="1"
+    Source="true"
+    Owner="dl.oracle.apps.fusion.pos.model.adfbc.entities.PartieEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="Partie"/>
+      <Attr Name="_foreignKey" Value="dl.oracle.apps.fusion.pos.model.adfbc.entities.PartieEO.PpsPartiyIdPk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.oracle.apps.fusion.pos.model.adfbc.entities.PartieEO.PartiyId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="Cashier"
+    Cardinality="-1"
+    Owner="dl.oracle.apps.fusion.pos.model.adfbc.entities.CashierEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="Cashier"/>
+      <Attr Name="_foreignKey" Value="dl.oracle.apps.fusion.pos.model.adfbc.entities.CashierEO.PcaPartiyIdFk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="dl.oracle.apps.fusion.pos.model.adfbc.entities.CashierEO.PartiyId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

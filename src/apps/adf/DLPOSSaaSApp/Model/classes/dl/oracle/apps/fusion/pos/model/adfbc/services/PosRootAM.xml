@@ -13,6 +13,22 @@
         ResId="dl.oracle.apps.fusion.pos.model.adfbc.services.PosRootAM_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
+  <AppModuleUsage
+    Name="OrdersAM1"
+    FullName="dl.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM"
+    SharedScope="0"/>
+  <AppModuleUsage
+    Name="PartiesAM1"
+    FullName="dl.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM"
+    SharedScope="0"/>
+  <AppModuleUsage
+    Name="StoresAM1"
+    FullName="dl.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"
+    SharedScope="0"/>
+  <AppModuleUsage
+    Name="InterfaceAM1"
+    FullName="dl.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"
+    SharedScope="0"/>
   <ResourceBundle>
     <PropertiesBundle
       PropertiesFile="dl.oracle.apps.fusion.pos.model.ModelBundle"/>

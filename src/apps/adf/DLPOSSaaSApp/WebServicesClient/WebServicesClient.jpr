@@ -84,12 +84,25 @@
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
+            <value n="id" v="Json-20190722.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="Roketto-Cloud-Libraries-0.0.1-SNAPSHOT.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
       <hash n="internalDefinitions">
          <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../../../../../../../../../Shared/Oracle Developer/Oracle-PaaS-Developer/PaaS4SaaS/Resources/json-20190722.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Json-20190722.jar"/>
+               <value n="id" v="Json-20190722.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
             <hash>
                <list n="classPath">
                   <url path="../../../../../../../Demasy-Workspace/RokettoCloudLibraries/target/Roketto-Cloud-Libraries-0.0.1-SNAPSHOT.jar" jar-entry=""/>
@@ -102,6 +115,10 @@
          </list>
       </hash>
       <list n="libraryReferences">
+         <hash>
+            <value n="id" v="Json-20190722.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
          <hash>
             <value n="id" v="Roketto-Cloud-Libraries-0.0.1-SNAPSHOT.jar"/>
             <value n="isJDK" v="false"/>

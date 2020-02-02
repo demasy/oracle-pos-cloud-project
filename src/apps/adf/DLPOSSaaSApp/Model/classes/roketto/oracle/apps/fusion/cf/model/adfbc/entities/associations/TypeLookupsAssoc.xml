@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="TypeLookupsAssoc"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="RhLookupType"
+    Cardinality="1"
+    Source="true"
+    Owner="roketto.oracle.apps.fusion.cf.model.adfbc.entities.LookupTypeEO"
+    LockLevel="NONE">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="RhLookupType"/>
+      <Attr Name="_foreignKey"
+        Value="roketto.oracle.apps.fusion.cf.model.adfbc.entities.LookupTypeEO.RhlookuptypeeoPrimaryKey"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="roketto.oracle.apps.fusion.cf.model.adfbc.entities.LookupTypeEO.TypeId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="RhLookup"
+    Cardinality="-1"
+    Owner="roketto.oracle.apps.fusion.cf.model.adfbc.entities.LookupEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="RhLookup"/>
+      <Attr Name="_foreignKey" Value="roketto.oracle.apps.fusion.cf.model.adfbc.entities.LookupEO.fk_RhLookupEO"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="roketto.oracle.apps.fusion.cf.model.adfbc.entities.LookupEO.TypeId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

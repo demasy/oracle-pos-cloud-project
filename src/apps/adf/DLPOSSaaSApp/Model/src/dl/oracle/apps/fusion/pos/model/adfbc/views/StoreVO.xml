@@ -20,9 +20,38 @@
         ResId="dl.oracle.apps.fusion.pos.model.adfbc.views.StoreVO_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
+  <ViewAccessor
+    Name="YesNoLookupLOV1"
+    ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.lov.views.YesNoLookupLOV"
+    RowLevelBinds="true"/>
+  <ListBinding
+    Name="LOV_EnabledFlag"
+    ListVOName="YesNoLookupLOV1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="EnabledFlag"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="ValueCode"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="DisplayedValue"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
   <EntityUsage
     Name="StoreEO"
     Entity="dl.oracle.apps.fusion.pos.model.adfbc.entities.StoreEO"/>
+  <ViewAttribute
+    Name="StoreId"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="StoreId"
+    EntityUsage="StoreEO"
+    AliasName="STORE_ID"
+    IsUpdateable="while_insert"/>
   <ViewAttribute
     Name="CountryCode"
     IsNotNull="true"
@@ -30,6 +59,56 @@
     EntityAttrName="CountryCode"
     EntityUsage="StoreEO"
     AliasName="COUNTRY_CODE"/>
+  <ViewAttribute
+    Name="ShortName"
+    IsUnique="true"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="ShortName"
+    EntityUsage="StoreEO"
+    AliasName="SHORT_NAME"/>
+  <ViewAttribute
+    Name="Name"
+    IsUnique="true"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="Name"
+    EntityUsage="StoreEO"
+    AliasName="NAME"/>
+  <ViewAttribute
+    Name="Description"
+    PrecisionRule="true"
+    EntityAttrName="Description"
+    EntityUsage="StoreEO"
+    AliasName="DESCRIPTION"/>
+  <ViewAttribute
+    Name="StartDate"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="StartDate"
+    EntityUsage="StoreEO"
+    AliasName="START_DATE"/>
+  <ViewAttribute
+    Name="EndDate"
+    PrecisionRule="true"
+    EntityAttrName="EndDate"
+    EntityUsage="StoreEO"
+    AliasName="END_DATE"/>
+  <ViewAttribute
+    Name="EnabledFlag"
+    IsNotNull="true"
+    PrecisionRule="true"
+    EntityAttrName="EnabledFlag"
+    EntityUsage="StoreEO"
+    AliasName="ENABLED_FLAG"
+    LOVName="LOV_EnabledFlag">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="choice"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="CreatedBy"
     IsNotNull="true"
@@ -43,33 +122,16 @@
     PrecisionRule="true"
     EntityAttrName="CreationDate"
     EntityUsage="StoreEO"
-    AliasName="CREATION_DATE"/>
-  <ViewAttribute
-    Name="Description"
-    PrecisionRule="true"
-    EntityAttrName="Description"
-    EntityUsage="StoreEO"
-    AliasName="DESCRIPTION"/>
-  <ViewAttribute
-    Name="EnabledFlag"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="EnabledFlag"
-    EntityUsage="StoreEO"
-    AliasName="ENABLED_FLAG"/>
-  <ViewAttribute
-    Name="EndDate"
-    PrecisionRule="true"
-    EntityAttrName="EndDate"
-    EntityUsage="StoreEO"
-    AliasName="END_DATE"/>
+    AliasName="CREATION_DATE"
+    IsUpdateable="false"/>
   <ViewAttribute
     Name="LastUpdateDate"
     IsNotNull="true"
     PrecisionRule="true"
     EntityAttrName="LastUpdateDate"
     EntityUsage="StoreEO"
-    AliasName="LAST_UPDATE_DATE"/>
+    AliasName="LAST_UPDATE_DATE"
+    IsUpdateable="false"/>
   <ViewAttribute
     Name="LastUpdatedBy"
     IsNotNull="true"
@@ -78,42 +140,13 @@
     EntityUsage="StoreEO"
     AliasName="LAST_UPDATED_BY"/>
   <ViewAttribute
-    Name="Name"
-    IsUnique="true"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="Name"
-    EntityUsage="StoreEO"
-    AliasName="NAME"/>
-  <ViewAttribute
     Name="ObjectVersionId"
     IsNotNull="true"
     PrecisionRule="true"
     EntityAttrName="ObjectVersionId"
     EntityUsage="StoreEO"
-    AliasName="OBJECT_VERSION_ID"/>
-  <ViewAttribute
-    Name="ShortName"
-    IsUnique="true"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="ShortName"
-    EntityUsage="StoreEO"
-    AliasName="SHORT_NAME"/>
-  <ViewAttribute
-    Name="StartDate"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="StartDate"
-    EntityUsage="StoreEO"
-    AliasName="START_DATE"/>
-  <ViewAttribute
-    Name="StoreId"
-    IsNotNull="true"
-    PrecisionRule="true"
-    EntityAttrName="StoreId"
-    EntityUsage="StoreEO"
-    AliasName="STORE_ID"/>
+    AliasName="OBJECT_VERSION_ID"
+    IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="StoreBranch"
     ViewLink="dl.oracle.apps.fusion.pos.model.adfbc.views.links.StoreBranchsVL"

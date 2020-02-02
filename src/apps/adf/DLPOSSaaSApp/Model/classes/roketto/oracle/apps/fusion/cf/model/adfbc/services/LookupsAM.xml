@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="LookupsAM"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true"
+  ComponentClass="roketto.oracle.apps.fusion.cf.model.adfbc.services.LookupsAMImpl">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="roketto.oracle.apps.fusion.cf.model.adfbc.services.LookupsAM_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ViewUsage
+    Name="Lookups1"
+    ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.views.LookupsVO"/>
+  <ViewUsage
+    Name="LookupTypes1"
+    ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.views.LookupTypesVO"/>
+  <ViewUsage
+    Name="LookupValues1"
+    ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.views.LookupValuesVO"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="dl.oracle.apps.fusion.pos.model.ModelBundle"/>
+  </ResourceBundle>
+</AppModule>

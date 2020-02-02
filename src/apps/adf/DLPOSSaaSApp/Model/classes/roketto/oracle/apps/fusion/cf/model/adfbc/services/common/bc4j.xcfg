@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!---->
+<BC4JConfig xmlns="http://xmlns.oracle.com/bc4j/configuration" version="11.1">
+  <AppModuleConfigBag ApplicationName="roketto.oracle.apps.fusion.cf.model.adfbc.services.LookupsAM">
+    <AppModuleConfig name="LookupsAMLocal" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="roketto.oracle.apps.fusion.cf.model.adfbc.services.LookupsAM"
+                     DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="roketto.oracle.apps.fusion.cf.model.adfbc.services.LookupsAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="LookupsAMShared" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="roketto.oracle.apps.fusion.cf.model.adfbc.services.LookupsAM"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="roketto.oracle.apps.fusion.cf.model.adfbc.services.LookupsAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+</BC4JConfig>

@@ -255,23 +255,9 @@
             <value n="id" v="ADF Common Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
-         <hash>
-            <value n="id" v="Roketto-Cloud-Libraries-0.0.1-SNAPSHOT.jar"/>
-            <value n="isJDK" v="false"/>
-         </hash>
       </list>
       <hash n="internalDefinitions">
-         <list n="libraryDefinitions">
-            <hash>
-               <list n="classPath">
-                  <url path="../../../../../../../Demasy-Workspace/RokettoCloudLibraries/target/Roketto-Cloud-Libraries-0.0.1-SNAPSHOT.jar" jar-entry=""/>
-               </list>
-               <value n="deployedByDefault" v="true"/>
-               <value n="description" v="Roketto-Cloud-Libraries-0.0.1-SNAPSHOT.jar"/>
-               <value n="id" v="Roketto-Cloud-Libraries-0.0.1-SNAPSHOT.jar"/>
-               <value n="locked" v="true"/>
-            </hash>
-         </list>
+         <list n="libraryDefinitions"/>
       </hash>
       <list n="libraryReferences">
          <hash>
@@ -308,10 +294,6 @@
          </hash>
          <hash>
             <value n="id" v="ADF Common Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Roketto-Cloud-Libraries-0.0.1-SNAPSHOT.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

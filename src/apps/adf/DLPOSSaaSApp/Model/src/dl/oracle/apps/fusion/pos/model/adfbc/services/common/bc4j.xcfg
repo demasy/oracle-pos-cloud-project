@@ -27,4 +27,45 @@
       <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"/>
     </AppModuleConfig>
   </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM">
+    <AppModuleConfig name="PartiesVOLocal" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="PartiesVOShared" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM">
+    <AppModuleConfig name="OrdersAMLocal" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM" DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="OrdersAMShared" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM" DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
+  <AppModuleConfigBag ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM">
+    <AppModuleConfig name="InterfaceAMLocal" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"
+                     DeployPlatform="LOCAL">
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"/>
+    </AppModuleConfig>
+    <AppModuleConfig name="InterfaceAMShared" jbo.project="dl.oracle.apps.fusion.pos.model.Model"
+                     ApplicationName="dl.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"
+                     DeployPlatform="LOCAL">
+      <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+      <Database jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS"/>
+      <Security AppModuleJndiName="dl.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"/>
+    </AppModuleConfig>
+  </AppModuleConfigBag>
 </BC4JConfig>

@@ -1,0 +1,12 @@
+//Groovy Scripts for demasylabs.oracle.apps.fusion.pos.model.adfbc.entities.StoreEO
+
+package demasylabs.oracle.apps.fusion.pos.model.adfbc.entities
+
+import oracle.jbo.script.annotation.TransientValueExpression;
+
+@TransientValueExpression(attributeName="StartDate")
+def StartDate_ExpressionScript_Expression()
+{
+adf.currentDate
+}
+

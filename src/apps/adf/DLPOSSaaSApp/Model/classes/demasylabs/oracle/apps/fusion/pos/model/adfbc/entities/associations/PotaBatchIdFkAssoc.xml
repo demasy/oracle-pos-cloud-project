@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Association SYSTEM "jbo_03_01.dtd">
+<!---->
+<Association
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="PotaBatchIdFkAssoc"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <DesignTime>
+    <Attr Name="_isCodegen" Value="true"/>
+  </DesignTime>
+  <AssociationEnd
+    Name="OrderTransferBatche"
+    Cardinality="1"
+    Source="true"
+    Owner="demasylabs.oracle.apps.fusion.pos.model.adfbc.entities.OrderTransferBatcheEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_minCardinality" Value="1"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="OrderTransferBatche"/>
+      <Attr Name="_foreignKey"
+        Value="demasylabs.oracle.apps.fusion.pos.model.adfbc.entities.OrderTransferBatcheEO.PotbBatchIdPk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="demasylabs.oracle.apps.fusion.pos.model.adfbc.entities.OrderTransferBatcheEO.BatchId"/>
+    </AttrArray>
+  </AssociationEnd>
+  <AssociationEnd
+    Name="OrderTransfer"
+    Cardinality="-1"
+    Owner="demasylabs.oracle.apps.fusion.pos.model.adfbc.entities.OrderTransferEO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_aggregation" Value="0"/>
+      <Attr Name="_finderName" Value="OrderTransfer"/>
+      <Attr Name="_foreignKey"
+        Value="demasylabs.oracle.apps.fusion.pos.model.adfbc.entities.OrderTransferEO.PotaBatchIdFk"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="demasylabs.oracle.apps.fusion.pos.model.adfbc.entities.OrderTransferEO.BatchId"/>
+    </AttrArray>
+  </AssociationEnd>
+</Association>

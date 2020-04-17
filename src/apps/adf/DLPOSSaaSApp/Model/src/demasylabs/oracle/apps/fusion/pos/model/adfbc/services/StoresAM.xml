@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="StoresAM"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ViewUsage
+    Name="StoreVO1"
+    ViewObjectName="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.StoreVO"/>
+  <ViewUsage
+    Name="StoreBranchVO1"
+    ViewObjectName="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.StoreBranchVO"/>
+  <ViewUsage
+    Name="WarehouseVO1"
+    ViewObjectName="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.WarehouseVO"/>
+  <ViewLinkUsage
+    Name="StoreBranchsVL1"
+    ViewLinkObjectName="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.links.StoreBranchsVL"
+    SrcViewUsageName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM.StoreVO1"
+    DstViewUsageName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM.StoreBranchVO1"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="BranchWarehousesVL1"
+    ViewLinkObjectName="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.links.BranchWarehousesVL"
+    SrcViewUsageName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM.StoreBranchVO1"
+    DstViewUsageName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM.WarehouseVO1"
+    Reversed="false"/>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="demasylabs.oracle.apps.fusion.pos.model.ModelBundle"/>
+  </ResourceBundle>
+</AppModule>

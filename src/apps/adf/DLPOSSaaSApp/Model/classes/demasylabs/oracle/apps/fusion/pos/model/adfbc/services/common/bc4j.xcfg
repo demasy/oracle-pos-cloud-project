@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM">
+      <AppModuleConfig name="InterfaceAMLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="InterfaceAMShared" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.InterfaceAM"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM">
+      <AppModuleConfig name="OrdersAMLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="OrdersAMShared" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.OrdersAM"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM">
+      <AppModuleConfig name="PartiesVOLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="PartiesVOShared" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.PartiesAM"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.DemasyLabsPOSAM">
+      <AppModuleConfig name="PosRootAMLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory"
+                       ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.DemasyLabsPOSAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.DemasyLabsPOSAM"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="PosRootAMShared" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory"
+                       ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.DemasyLabsPOSAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.DemasyLabsPOSAM"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM">
+      <AppModuleConfig name="StoresAMLocal" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="StoresAMShared" DeployPlatform="LOCAL" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" ApplicationName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"
+                       jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model">
+         <AM-Pooling jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1"/>
+         <Database jbo.locking.mode="optimistic" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="demasylabs.oracle.apps.fusion.pos.model.adfbc.services.StoresAM"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

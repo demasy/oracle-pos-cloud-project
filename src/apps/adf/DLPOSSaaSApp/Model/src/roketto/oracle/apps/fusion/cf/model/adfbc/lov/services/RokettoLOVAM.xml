@@ -10,4 +10,7 @@
   <ViewUsage
     Name="YesNoLookupLOV1"
     ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.lov.views.YesNoLookupLOV"/>
+  <ViewUsage
+    Name="YesNoStaticListLOV1"
+    ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.lov.views.YesNoStaticListLOV"/>
 </AppModule>

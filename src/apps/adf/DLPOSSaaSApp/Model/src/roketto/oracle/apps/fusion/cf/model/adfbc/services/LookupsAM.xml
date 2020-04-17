@@ -18,16 +18,16 @@
     </SchemaBasedProperties>
   </Properties>
   <ViewUsage
-    Name="Lookups1"
+    Name="LookupsVO1"
     ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.views.LookupsVO"/>
   <ViewUsage
-    Name="LookupTypes1"
+    Name="LookupTypesVO1"
     ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.views.LookupTypesVO"/>
   <ViewUsage
-    Name="LookupValues1"
+    Name="LookupValuesVO1"
     ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.views.LookupValuesVO"/>
   <ResourceBundle>
     <PropertiesBundle
-      PropertiesFile="dl.oracle.apps.fusion.pos.model.ModelBundle"/>
+      PropertiesFile="demasylabs.oracle.apps.fusion.pos.model.ModelBundle"/>
   </ResourceBundle>
 </AppModule>

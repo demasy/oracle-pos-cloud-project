@@ -68,7 +68,7 @@
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
-   <value n="defaultPackage" v="dl.oracle.apps.fusion.pos.view"/>
+   <value n="defaultPackage" v="demasylabs.oracle.apps.fusion.pos.view"/>
    <hash n="oracle.ide.model.DependencyConfiguration">
       <list n="dependencyList">
          <hash>

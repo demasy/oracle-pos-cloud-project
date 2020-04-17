@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+<!---->
+<ViewLink
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="StoreBranchsVL"
+  Version="12.2.1.9.14"
+  InheritPersonalization="merge">
+  <Properties>
+    <SchemaBasedProperties>
+      <LABEL
+        ResId="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.links.StoreBranchsVL_LABEL"/>
+    </SchemaBasedProperties>
+  </Properties>
+  <ViewLinkDefEnd
+    Name="Store"
+    Cardinality="1"
+    Source="true"
+    Owner="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.StoreVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="Store"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.StoreVO.StoreId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ViewLinkDefEnd
+    Name="StoreBranch"
+    Cardinality="-1"
+    Owner="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.StoreBranchVO">
+    <DesignTime>
+      <Attr Name="_isUpdateable" Value="true"/>
+      <Attr Name="_finderName" Value="StoreBranch"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="demasylabs.oracle.apps.fusion.pos.model.adfbc.views.StoreBranchVO.StoreId"/>
+    </AttrArray>
+  </ViewLinkDefEnd>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="demasylabs.oracle.apps.fusion.pos.model.ModelBundle"/>
+  </ResourceBundle>
+</ViewLink>

@@ -121,6 +121,6 @@
     AliasName="OBJECT_VERSION_ID"/>
   <ResourceBundle>
     <PropertiesBundle
-      PropertiesFile="dl.oracle.apps.fusion.pos.model.ModelBundle"/>
+      PropertiesFile="demasylabs.oracle.apps.fusion.pos.model.ModelBundle"/>
   </ResourceBundle>
 </ViewObject>

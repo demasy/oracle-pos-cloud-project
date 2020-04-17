@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="roketto.oracle.apps.fusion.cf.model.adfbc.lov.services.RokettoLOVAM">
+      <AppModuleConfig name="170828C164A" JDBCName="DL" DeployPlatform="LOCAL" jbo.project="demasylabs.oracle.apps.fusion.pos.model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="RokettoLOVAMLocal" ApplicationName="roketto.oracle.apps.fusion.cf.model.adfbc.lov.services.RokettoLOVAM" DBconnection="java:comp/env/jdbc/DLDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" JDBCDataSource="java:comp/env/jdbc/DLDS" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="roketto.oracle.apps.fusion.cf.model.adfbc.lov.services.RokettoLOVAM"/>
+         <Tester FullProxyInterfaceName="roketto.oracle.apps.fusion.cf.model.adfbc.lov.services.common.RokettoLOVAM"/>
+         <Custom ns0:tester_classloader_enabled="true" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

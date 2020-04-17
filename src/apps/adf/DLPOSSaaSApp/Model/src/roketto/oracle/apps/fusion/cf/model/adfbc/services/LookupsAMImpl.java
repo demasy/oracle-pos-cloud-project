@@ -19,24 +19,24 @@ public class LookupsAMImpl extends ApplicationModuleImpl {
      * Container's getter for Lookups1.
      * @return Lookups1
      */
-    public ViewObjectImpl getLookups1() {
-        return (ViewObjectImpl) findViewObject("Lookups1");
+    public ViewObjectImpl getLookupsVO1() {
+        return (ViewObjectImpl) findViewObject("LookupsVO1");
     }
 
     /**
      * Container's getter for LookupTypes1.
      * @return LookupTypes1
      */
-    public ViewObjectImpl getLookupTypes1() {
-        return (ViewObjectImpl) findViewObject("LookupTypes1");
+    public ViewObjectImpl getLookupTypesVO1() {
+        return (ViewObjectImpl) findViewObject("LookupTypesVO1");
     }
 
     /**
      * Container's getter for LookupValues1.
      * @return LookupValues1
      */
-    public ViewObjectImpl getLookupValues1() {
-        return (ViewObjectImpl) findViewObject("LookupValues1");
+    public ViewObjectImpl getLookupValuesVO1() {
+        return (ViewObjectImpl) findViewObject("LookupValuesVO1");
     }
 }
 

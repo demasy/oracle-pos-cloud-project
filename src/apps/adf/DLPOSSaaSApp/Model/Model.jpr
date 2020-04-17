@@ -68,8 +68,8 @@
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
    </list>
-   <value n="defaultPackage" v="dl.oracle.apps.fusion.pos.model"/>
-   <value n="jbo.JpxName" v="dl.oracle.apps.fusion.pos.model.Model"/>
+   <value n="defaultPackage" v="demasylabs.oracle.apps.fusion.pos.model"/>
+   <value n="jbo.JpxName" v="demasylabs.oracle.apps.fusion.pos.model.Model"/>
    <value n="jbo.NoAttrEnumClasses" v="true"/>
    <value n="JboProject" v="true"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">

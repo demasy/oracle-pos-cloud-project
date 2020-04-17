@@ -20,6 +20,27 @@
         ResId="roketto.oracle.apps.fusion.cf.model.adfbc.views.LookupTypesVO_LABEL"/>
     </SchemaBasedProperties>
   </Properties>
+  <ViewAccessor
+    Name="YesNoStaticListLOV1"
+    ViewObjectName="roketto.oracle.apps.fusion.cf.model.adfbc.lov.views.YesNoStaticListLOV"
+    RowLevelBinds="true"/>
+  <ListBinding
+    Name="LOV_EnabledFlag"
+    ListVOName="YesNoStaticListLOV1"
+    NullValueFlag="none"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="EnabledFlag"/>
+    </AttrArray>
+    <AttrArray Name="AttrExpressions"/>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="LookupCode"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="LookupValue"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
   <EntityUsage
     Name="RhLookupTypeEO"
     Entity="roketto.oracle.apps.fusion.cf.model.adfbc.entities.LookupTypeEO"/>
@@ -29,7 +50,8 @@
     PrecisionRule="true"
     EntityAttrName="TypeId"
     EntityUsage="RhLookupTypeEO"
-    AliasName="TYPE_ID"/>
+    AliasName="TYPE_ID"
+    IsUpdateable="while_insert"/>
   <ViewAttribute
     Name="TypeShortName"
     IsNotNull="true"
@@ -69,7 +91,15 @@
     PrecisionRule="true"
     EntityAttrName="EnabledFlag"
     EntityUsage="RhLookupTypeEO"
-    AliasName="ENABLED_FLAG"/>
+    AliasName="ENABLED_FLAG"
+    LOVName="LOV_EnabledFlag">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="choice"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="CustLevel"
     IsNotNull="true"
@@ -104,14 +134,16 @@
     PrecisionRule="true"
     EntityAttrName="CreationDate"
     EntityUsage="RhLookupTypeEO"
-    AliasName="CREATION_DATE"/>
+    AliasName="CREATION_DATE"
+    IsUpdateable="false"/>
   <ViewAttribute
     Name="LastUpdateDate"
     IsNotNull="true"
     PrecisionRule="true"
     EntityAttrName="LastUpdateDate"
     EntityUsage="RhLookupTypeEO"
-    AliasName="LAST_UPDATE_DATE"/>
+    AliasName="LAST_UPDATE_DATE"
+    IsUpdateable="false"/>
   <ViewAttribute
     Name="LastUpdatedBy"
     IsNotNull="true"
@@ -125,7 +157,8 @@
     PrecisionRule="true"
     EntityAttrName="ObjectVersionId"
     EntityUsage="RhLookupTypeEO"
-    AliasName="OBJECT_VERSION_ID"/>
+    AliasName="OBJECT_VERSION_ID"
+    IsUpdateable="false"/>
   <ViewLinkAccessor
     Name="Lookups"
     ViewLink="roketto.oracle.apps.fusion.cf.model.adfbc.views.links.TypeLookupsVL"
@@ -133,6 +166,6 @@
     IsUpdateable="false"/>
   <ResourceBundle>
     <PropertiesBundle
-      PropertiesFile="dl.oracle.apps.fusion.pos.model.ModelBundle"/>
+      PropertiesFile="demasylabs.oracle.apps.fusion.pos.model.ModelBundle"/>
   </ResourceBundle>
 </ViewObject>
